@@ -232,10 +232,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('typed-target')) {
         new Typed('#typed-target', {
             strings: [
-                'Why do reading abilities diverge?',
-                'What brain architecture underpins individual reading skill?',
-                'Is reading variation driven by domain-general resources?',
-                'How does reading skill change over time?'
+                'Why does processing vary across individuals?',
+                'How do unique cognitive profiles shape comprehension?',
+                'How does working memory constrain processing?',
             ],
             typeSpeed: 40,
             backSpeed: 25,
