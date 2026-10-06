@@ -235,6 +235,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 'Why does processing vary across individuals?',
                 'How do unique cognitive profiles shape comprehension?',
                 'How does working memory constrain processing?',
+                'How does language influence cognition'
             ],
             typeSpeed: 40,
             backSpeed: 25,
