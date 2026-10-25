@@ -235,7 +235,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 'Why does processing vary across individuals?',
                 'How do unique cognitive profiles shape comprehension?',
                 'How does working memory constrain processing?',
-                'How does language influence cognition'
+                'How does language influence cognition?'
             ],
             typeSpeed: 40,
             backSpeed: 25,
@@ -244,20 +244,6 @@ document.addEventListener('DOMContentLoaded', () => {
             loop: true,
             showCursor: true,
             cursorChar: '|'
-        });
-    }
-
-    // ==========================================
-    // 7. HERO MOUSE-TRACKING GLOW
-    // ==========================================
-    const hero = document.querySelector('.hero');
-    if (hero) {
-        hero.addEventListener('mousemove', (e) => {
-            const rect = hero.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-            hero.style.setProperty('--mouse-x', `${x}px`);
-            hero.style.setProperty('--mouse-y', `${y}px`);
         });
     }
 
