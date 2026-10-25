@@ -81,11 +81,11 @@ h1, h2, h3, .project-card h3, .pub-card h3 {
 
 /* Avatar Size */
 .avatar {
-    width: 80px;
-    height: 80px;
-    border-radius: 2%;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
     object-fit: cover;
-    margin: 0 0 1.5rem 0;
+    margin: 0 auto 1.5rem auto;
     display: block;
     background-color: var(--border);
     border: 1px solid var(--border);
