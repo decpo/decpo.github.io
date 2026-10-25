@@ -1,10 +1,9 @@
 :root {
-    /* Editorial Warm Canvas Palette */
-    --bg-color: #fafafa;        /* Warm paper tint */
+    --bg-color: #fafafa;        
     --card-bg: #ffffff;
-    --text-main: #1c1917;       /* Rich stone charcoal */
-    --text-muted: #737373;      /* Warm stone gray */
-    --accent: #0a0a0a;          /* Rich academic sage/forest */
+    --text-main: #1c1917;       
+    --text-muted: #737373;      
+    --accent: #0a0a0a;          
     --accent-light: #f4f4f5;
     --border: #e7e5e4;
     --radius: 0px;
@@ -28,7 +27,7 @@ body.dark-mode {
     --text-muted: #a3a3a3;
     --accent: #ffffff;          /* Soft sage glow */
     --accent-light: #171717;
-    --border: #2626262;
+    --border: #262626;
     --shadow: none;
 
     /* Adjusted Blue for Dark Mode Contrast */
@@ -113,11 +112,11 @@ h1, h2, h3, .project-card h3, .pub-card h3 {
     margin-bottom: 1.5rem;
 }
 
-.social-links a {
+.social-links {
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
-    border-top: 1px solud var(--border);
+    border-top: 1px solid var(--border);
     padding-top: 1rem;
 }
 
@@ -150,24 +149,6 @@ h1, h2, h3, .project-card h3, .pub-card h3 {
 }
 .social-links a:hover {
     color: var(--text-main);
-}
-.theme-btn: {
-    background: transparent;
-    border: 1px solid var(--border);
-    color: var(--text-main);
-    padding: 0.4rem 0.6rem;
-    border-radius: 2px;
-    cursor: pointer;
-    font-family: var(--font-mono);
-    font-size: 0.75rem;
-    font-weight: 500;
-    margin-top: 1.5rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    transition: background-color 0.15s ease;
 }
 .theme-btn:hover {
     background-color: var(--accent-light);
@@ -241,7 +222,7 @@ h2 {
 .cv-item .sub {
     font-size: 0.825rem;
     color: var(--text-muted);
-    margin-top: 0.1rem
+    margin-top: 0.1rem;
 }
 
 /* Publications */
@@ -289,7 +270,7 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 0;
-    border-top: 1px solid ar(--border);
+    border-top: 1px solid var(--border);
 }
 
 .project-card {
@@ -343,7 +324,7 @@ h2 {
 
 .project-desc {
     font-size: 0.85rem;
-    color: var(--text-muted)
+    color: var(--text-muted);
     margin-bottom: 0.75rem;
 }
 
@@ -401,7 +382,7 @@ kbd {
     color: var(--text-main);
 }
 
-.spr-display, .maze-display {
+.spr-display {
     background-color: var(--bg-color);
     border: 1px solid var(--border);
     border-radius: 2px;
@@ -414,6 +395,18 @@ kbd {
     font-family: var(--font-mono);
     font-size: 1rem;
     line-height: 2;
+}
+
+.maze-display {
+    background-color: var(--bg-color);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .spr-word-mask {
@@ -447,13 +440,13 @@ kbd {
 }
 
 /* Demo Buttons */
-.spr-btn, maze-start-btn {
+.spr-btn, .maze-start-btn {
     background-color: var(--text-main);
     color: var(--card-bg); /* Automatically flips for high contrast in dark/light mode */
     border: 1px solid var(--text-main);
     padding: 0.5rem 1rem;
     border-radius: 2px;
-    font-family: var (--font-mono);
+    font-family: var(--font-mono);
     font-size: 0.78rem;
     font-weight: 500;
     cursor: pointer;
@@ -462,7 +455,7 @@ kbd {
 
 .spr-btn:hover, .maze-start-btn:hover {
     opacity: 0.85;
-    transform: none);
+    transform: none;
 }
 
 body.dark-mode .maze-start-btn {
@@ -472,10 +465,14 @@ body.dark-mode .maze-start-btn {
     background: var(--card-bg);
     border: 1px solid var(--border);
     border-radius: 2px;
-    padding: 1rem;
-    min-width: 120px;
+    padding: 1rem 1.5rem;
+    min-width: 140px;
     cursor: pointer;
-    transition: border-color 0.15s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    transition: border-color 0.15s ease, background-color 0.15s ease;
 }
 .maze-word-btn:hover {
     border-color: var(--text-main);
