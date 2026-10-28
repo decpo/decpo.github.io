@@ -338,7 +338,26 @@ h2 {
     font-size: 0.72rem;
     color: var(--text-muted);
 }
+/* OSF Pre-registration Link Button */
+.osf-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background-color: transparent;
+    color: var(--text-main);
+    border: 1px solid var(--border);
+    padding: 0.35rem 0.7rem;
+    border-radius: var(--radius);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    text-decoration: none;
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+}
 
+.osf-btn:hover {
+    background-color: var(--accent-light);
+    border-color: var(--text-main);
+}
 /* SPR and Maze styles */
 .spr-demo-card {
     background: var(--card-bg);
